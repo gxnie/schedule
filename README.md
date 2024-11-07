@@ -25,8 +25,6 @@
 name : "작성자명",
 password : "비밀번호",
 title : "일정제목",
-startDate : "YYYY-MM-DD",
-deadLine : "YYYY-MM-DD",
 todo : "내용"
 }
 ```
@@ -37,8 +35,8 @@ todo : "내용"
 id : "1",
 name : "작성자명",
 title : "일정제목",
-startDate : "YYYY-MM-DD",
-deadLine : "YYYY-MM-DD",
+creationDate : "YYYY-MM-DD",
+modificationDate : "YYYY-MM-DD",
 todo : "내용"
 }
 ```
@@ -55,8 +53,8 @@ todo : "내용"
 {
 name : "작성자명",
 title : "일정제목",
-startDate : "YYYY-MM-DD",
-deadLine : "YYYY-MM-DD",
+creationDate : "YYYY-MM-DD",
+modificationDate : "YYYY-MM-DD",
 todo : "내용"
 }
 ```
@@ -74,8 +72,8 @@ todo : "내용"
 id : "1",
 name : "작성자명",
 title : "일정제목",
-startDate : "YYYY-MM-DD",
-deadLine : "YYYY-MM-DD",
+creationDate : "YYYY-MM-DD",
+modificationDate : "YYYY-MM-DD",
 todo : "내용"
 }
 ```
@@ -91,10 +89,8 @@ todo : "내용"
 #### Request
 ```
 {
-id : "1",
-title : "수정된 일정제목",
-startDate : "YYYY-MM-DD",
-deadLine : "YYYY-MM-DD",
+password : "비밀번호",
+name : "작성자 명"
 todo : "수정된 내용"
 }
 ```
@@ -104,8 +100,7 @@ todo : "수정된 내용"
 {
 id : "1",
 title : "수정된 일정제목",
-startDate : "YYYY-MM-DD",
-deadLine : "YYYY-MM-DD",
+modificationDate : "수정일",
 todo : "수정된 내용"
 }
 ```
@@ -127,5 +122,5 @@ password : "비밀번호"
 
 ***
 ### ERD
-![Alt text](schedulesERD.png)
+![schedules.png](schedules.png)
 ***
