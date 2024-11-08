@@ -12,7 +12,13 @@ import java.util.*;
 @RestController
 @RequestMapping("/schedules")
 public class SchedulesController {
+    // RestController
+    // @Controller -> return "admin"; -> admin.html -> JSP, Thymleaf -> Front 작업할 수 있는 스프링 같은
+    // @RestController -> return ResponseEntity -> html 같은 페이지로 리턴을 하는건 아니잖아요? -> json 형식
 
+    // 생성자
+    // Calculator cal = new Calculator(); -> 객체를 생성한다. -> 생성자를 호출한다.
+    // calculate(); -> 함수 -> 어딘가 정의되어 있어야 하죠?
     private final Map<Long, Schedules> schedulesList = new HashMap<>();
 
     @PostMapping
@@ -21,7 +27,7 @@ public class SchedulesController {
         Long schedulesId = schedulesList.isEmpty() ? 1 : Collections.max(schedulesList.keySet()) + 1;
 
         // 요청받은 데이터로 Schedules 객체 생성
-        Schedules schedules = new Schedules(schedulesId,dto.getName(),dto.getPassword(), dto.getCreationDate(), dto.getModificationDate(),dto.getTodo());
+        Schedules schedules = new Schedules(schedulesId,dto.getName(), dto.getPassword(), dto.getCreationDate(), dto.getModificationDate(), dto.getTodo());
 
         // Inmemory DB에 저장
         schedulesList.put(schedulesId, schedules);

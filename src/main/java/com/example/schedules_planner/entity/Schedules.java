@@ -3,6 +3,7 @@ package com.example.schedules_planner.entity;
 import com.example.schedules_planner.dto.SchedulesRequestDto;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
 import java.time.LocalTime;
