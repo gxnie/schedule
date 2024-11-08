@@ -12,8 +12,8 @@ public class SchedulesResponseDto {
     private Long id;
     private String name;
     private String password;
-    private String creationDate;
-    private String modificationDate;
+    private LocalDateTime creationDate;
+    private LocalDateTime modificationDate;
     private String todo;
 
     public SchedulesResponseDto() {}

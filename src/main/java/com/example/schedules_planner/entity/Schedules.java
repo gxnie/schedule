@@ -15,8 +15,8 @@ public class Schedules {
     private Long id;
     private String name;
     private String password;
-    private String creationDate;
-    private String modificationDate;
+    private LocalDateTime creationDate;
+    private LocalDateTime modificationDate;
     private String todo;
 
     public void update(SchedulesRequestDto requestDto) {
@@ -24,11 +24,11 @@ public class Schedules {
         this.todo = requestDto.getTodo();
 
 
-        LocalDateTime dateTime = LocalDateTime.now();
-        // 포맷 지정하기 "yyyy-MM-dd HH:mm:ss"
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
-
-        String stringFormatter = dateTime.format(formatter);
-        this.modificationDate = stringFormatter;
+//        LocalDateTime dateTime = LocalDateTime.now();
+//        // 포맷 지정하기 "yyyy-MM-dd HH:mm:ss"
+//        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+//
+//        String stringFormatter = dateTime.format(formatter);
+//        this.modificationDate = stringFormatter;
     }
 }

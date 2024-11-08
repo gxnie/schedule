@@ -10,8 +10,8 @@ import java.time.LocalDateTime;
 public class SchedulesRequestDto {
     private String name;
     private String password;
-    private String creationDate;
-    private String modificationDate;
+    private LocalDateTime creationDate;
+    private LocalDateTime modificationDate;
     private String todo;
 
 }
